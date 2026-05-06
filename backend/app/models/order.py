@@ -59,7 +59,9 @@ class Order(Base, TimestampMixin):
         String(20), nullable=False, unique=True
     )
     status: Mapped[OrderStatus] = mapped_column(
-        Enum(OrderStatus), nullable=False, server_default=OrderStatus.PENDING.value
+        Enum(OrderStatus, values_callable=lambda x: [e.value for e in x]),
+        nullable=False,
+        server_default=OrderStatus.PENDING.value,
     )
     total_amount: Mapped[int] = mapped_column(Integer, nullable=False, server_default="0")
     ordered_at: Mapped[datetime] = mapped_column(

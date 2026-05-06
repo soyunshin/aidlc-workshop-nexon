@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
     # Database
-    database_url: str = "mysql+asyncmy://app_user:app_password@localhost:3306/table_order"
+    database_url: str = "sqlite+aiosqlite:///./table_order.db"
 
     # Security
     secret_key: str = "change-me-in-production"

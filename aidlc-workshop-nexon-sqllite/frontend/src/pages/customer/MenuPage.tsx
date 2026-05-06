@@ -8,7 +8,7 @@ import { CategoryTabs } from './components/CategoryTabs';
 import { MenuGrid } from './components/MenuGrid';
 import { CartFloatingButton } from './components/CartFloatingButton';
 
-const USE_MOCK = false; // 백엔드 연결 시 false로 변경
+const USE_MOCK = false; // 실제 API 사용
 
 export function MenuPage() {
   const [categories, setCategories] = useState<Category[]>([]);

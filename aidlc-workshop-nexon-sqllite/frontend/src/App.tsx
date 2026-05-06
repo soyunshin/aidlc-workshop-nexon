@@ -17,7 +17,7 @@ import { TableManagePage } from './pages/admin/TableManagePage';
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { state } = useAuth();
 
-  // Mock 모드: 인증 체크 우회
+  // Mock 모드: 개발 시 true, 실제 API 연동 시 false
   const USE_MOCK = false;
   if (USE_MOCK) return <>{children}</>;
 

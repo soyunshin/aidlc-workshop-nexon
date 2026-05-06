@@ -47,6 +47,7 @@ class OrderResponse(BaseModel):
     status: OrderStatus
     total_amount: int
     ordered_at: datetime
+    table_id: int
     items: list[OrderItemResponse] = []
 
     model_config = {"from_attributes": True}
