@@ -84,3 +84,43 @@
 **Context**: INCEPTION - Units Generation complete. 7 units: database-core, auth-backend, menu-backend, order-table-backend, customer-frontend, admin-frontend, integration-testing.
 
 ---
+
+## Units Generation - Approval & Construction Start
+**Timestamp**: 2026-05-06T00:50:00Z
+**User Input**: "나는 개발자B에 해당하는 개발 작업을 진행하려고 해 functional-design.md 이거 읽고 기능 개발 진행하도록 해"
+**AI Response**: Units Generation approved. Starting CONSTRUCTION phase for Developer B (Frontend). Beginning Functional Design for Unit 5 (customer-frontend).
+**Context**: CONSTRUCTION - Functional Design for Unit 5 started. Developer B handles Unit 5 + Unit 6.
+
+---
+
+## Functional Design - Unit 5 Customer Frontend
+**Timestamp**: 2026-05-06T00:55:00Z
+**User Input**: "파일 수정 완료, 다음 단계 진행해줘"
+**AI Response**: All 5 questions answered (Q1=C, Q2=A, Q3=A, Q4=A, Q5=A). Generated 4 functional design artifacts for customer-frontend.
+**Context**: CONSTRUCTION - Functional Design for Unit 5 complete. Artifacts: business-logic-model.md, business-rules.md, domain-entities.md, frontend-components.md.
+
+---
+
+## NFR Requirements - Unit 5 Customer Frontend
+**Timestamp**: 2026-05-06T01:00:00Z
+**User Input**: "끝났으면 다음 작업 진행해줘"
+**AI Response**: Functional Design approved. NFR Requirements generated for Unit 5 (customer-frontend). No additional questions needed - NFR decisions derived from project requirements and tech stack decisions.
+**Context**: CONSTRUCTION - NFR Requirements for Unit 5 complete. Tech stack: React 18 + TypeScript + Vite + Vitest + fast-check.
+
+---
+
+## Code Generation - Unit 5 Customer Frontend
+**Timestamp**: 2026-05-06T01:10:00Z
+**User Input**: "코드 생성해줘"
+**AI Response**: Code generation plan approved. Generated complete React frontend code for Unit 5 (customer-frontend). 20+ files created in frontend/ directory.
+**Context**: CONSTRUCTION - Code Generation for Unit 5 complete. All customer-facing pages, components, contexts, and PBT tests generated.
+
+---
+
+## Code Generation - Unit 6 Admin Frontend
+**Timestamp**: 2026-05-06T01:20:00Z
+**User Input**: "다음 작업 진행해줘"
+**AI Response**: Unit 5 approved. Generated Unit 6 (Admin Frontend) code: AdminLoginPage, DashboardPage (SSE), MenuManagePage (CRUD), TableManagePage (세션 관리). Updated App.tsx with admin routes.
+**Context**: CONSTRUCTION - Code Generation for Unit 6 complete. All admin pages generated.
+
+---
